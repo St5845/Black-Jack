@@ -55,7 +55,7 @@ class Hand:   # show all the cards that the dealer and player have
         self.cards.append(card)
         self.value += values[card.rank]
         if card.rank == 'Ace':
-            self.aces += 1
+            self.aces = self.aces+1
 
     def adjust_for_ace(self):
         while self.value > 21 and self.aces:
@@ -136,7 +136,7 @@ def player_busts(player, dealer, chips):
 
 
 def player_wins(player, dealer, chips):
-    print("PLAYER WINS!")
+    print("PLAYER WINS")
     chips.win_bet()
 
 
