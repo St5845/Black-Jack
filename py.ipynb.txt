@@ -22,7 +22,7 @@ class Card:  # Creates all the cards
         return self.rank + ' of ' + self.suit
 
 
-class Deck:  # creates a deck of cards
+class Deck:  # creates a deck of cards to code 
 
     def __init__(self):
         self.deck = []  # haven't created a deck yet
@@ -76,7 +76,7 @@ class Chips:   # keep track of chips
         self.total -= self.bet
 
 
-# FUNCTIONS
+# FUNCTIONS to code
 
 def take_bet(chips):  # ask for user's bet
 
@@ -89,7 +89,7 @@ def take_bet(chips):  # ask for user's bet
             if chips.bet > chips.total:
                 print("You bet can't exceed 100!")
             else:
-                break
+                break;
 
 
 def hit(deck, hand):
@@ -111,7 +111,7 @@ def hit_or_stand(deck, hand):   # hit or stand
         else:
             print("Sorry! I did not understand that! Please try again!")
             continue
-        break
+        break;
 
 
 def show_some(player, dealer):
@@ -213,10 +213,10 @@ while True:
     new_game = input("\nWould you like to play again? Enter 'y' or 'n': ")
     if new_game[0].lower() == 'y':
         playing = True
-        continue
+        continue;
     else:
         print("\nThanks for playing!")
-        break
+        break;
 
 
 
